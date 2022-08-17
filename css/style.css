@@ -56,7 +56,7 @@ header{
 }
 
 .nav-link{
-    margin: 0 10px;
+    margin: 0 20px;
     text-decoration: none;
     font-size: 25px;
 }
@@ -139,6 +139,7 @@ p{
     margin: 10px;
     padding: 20px;
     text-decoration: none;
+    min-width: 200px;
 }
 
 .card div img:hover{
@@ -213,4 +214,47 @@ footer{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+
+@media (max-width: 800px){
+    .menu{
+        flex-direction: column;
+    }
+
+    .nav-link{
+        margin: 0 5px;
+    }
+
+    .redes{
+        flex-direction: row;
+        padding: 10px 0;
+    }
+
+    .redes a{
+        margin: 0 10px;
+    }
+}
+
+
+
+@media (max-width: 640px){
+    .nav{
+    }
+
+    .cards{
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        margin: 0 0;
+    }
+
+    .card{
+        width: 100%;
+        padding: 0;
+        margin: 5px 0;
+    }
+
+    .tarjeta{
+        width: 100%;
+    }
 }
