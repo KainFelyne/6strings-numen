@@ -48,8 +48,7 @@ header{
 
 /* .nav-block{
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto;    
 } */
 
 .nav{
@@ -162,6 +161,8 @@ p{
     margin-bottom: 50px;
 }
 
+/* *****CONTACTO**** */
+
 .contacto{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -183,12 +184,25 @@ p{
     align-items: center;
 }
 
+form{
+    width: 100%;
+    padding: 0 10px;
+}
+
+.formulario{
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
 .boton-enviar{
     padding: 5px;
     font-family: 'Noto Serif', serif;;
     background-color: #F2E3B3;
     border: none;
     border-radius: 5px;
+    font-weight: bold;
     /* font-family: 'Karla', sans-serif; */
 }
 
@@ -225,6 +239,13 @@ footer{
 }
 
 @media (max-width: 800px){
+
+    .padding-centrado{
+        padding: 0;
+    }
+
+
+
     .menu{
         flex-direction: column;
     }
@@ -251,6 +272,12 @@ footer{
         display: none;
     }
 
+    form{
+        width: 100%;
+        padding: 0;
+        min-width: 300px;
+    }
+
     footer{
         flex-direction: column;
         align-items: center;
@@ -269,12 +296,14 @@ footer{
         flex-direction: column;
         padding: 0;
         margin: 0 0;
+        align-items: center;
     }
 
     .card{
-        width: 100%;
+        width: 80%;
         padding: 0;
         margin: 5px 0;
+        min-width: 300px;
     }
 
     .tarjeta{
@@ -287,7 +316,7 @@ footer{
     }
 
     .contacto-mapa{
-        padding-top: 10px;
+        padding-top: 20px;
     }
 
     .datos{
