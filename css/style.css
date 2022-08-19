@@ -81,18 +81,20 @@ header{
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .banner-intro{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 .titulo-intro{
     font-size: 40px;
     font-weight: 700;
-    margin-bottom: 50px;
 }
 
 .titulo{
@@ -201,6 +203,8 @@ footer{
 
 .datos{
     width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 .span-datos{
@@ -233,28 +237,26 @@ footer{
         margin: 0 10px;
     }
 
+    .banner-intro{
+    justify-content: center;
+    align-items: center;
+    }
+
     .p-intro{
         display: none;
+        visibility: hidden;
     }
 
     footer{
         flex-direction: column;
         align-items: center;
-    }
-
-    .datos{
-        width: 100%;
         justify-content: center;
-    }
-
-    .redes-footer{
-        width: 100%;
     }
 }
 
 
 
-@media (max-width: 640px){
+@media (max-width: 750px){
     .nav{
     }
 
@@ -284,7 +286,20 @@ footer{
         padding-top: 10px;
     }
 
-    .footer{
+    .datos{
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .span-datos{
+        display: block;
+        width: 100%;
+    }
+
+    .correo{
+        text-align: center;
     }
 }
