@@ -37,6 +37,7 @@ header{
     align-items: center;
     position: fixed;
     display: flex;
+    z-index: 10;
 }
 
 .borde{
@@ -282,6 +283,7 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 }
 
@@ -289,6 +291,10 @@ footer{
 
 @media (max-width: 750px){
     .nav{
+    }
+
+    #productos{
+        padding: 0 20px;
     }
 
     .cards{
@@ -300,14 +306,17 @@ footer{
     }
 
     .card{
-        width: 80%;
         padding: 0;
         margin: 5px 0;
-        min-width: 300px;
+        width: 300px;
     }
 
     .tarjeta{
         width: 100%;
+    }
+
+    .contacto{
+        padding: 20px 20px;
     }
 
     .contenedor-contacto{
@@ -320,6 +329,7 @@ footer{
     }
 
     .datos{
+        padding: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -339,4 +349,9 @@ footer{
     .correo{
         text-align: center;
     }
+
+    .redes-footer{
+        padding-bottom: 10px;
+    }
+    
 }
